@@ -1,0 +1,2 @@
+def gethi():
+    return "Hi"
