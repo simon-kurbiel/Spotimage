@@ -7,6 +7,7 @@ class Settings(BaseSettings):
     REDIRECT_URI:str
     AUTHORIZATION_URL:str="https://accounts.spotify.com/authorize"
     SCOPES:str="user-top-read user-read-private user-read-email"
+    UPLOAD_FOLDER: str = "uploads"
     
     class Config:
         env_file='.env'
