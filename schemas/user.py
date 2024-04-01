@@ -11,10 +11,15 @@ class UserInfo(BaseModel):
 class TopItemsBase(BaseModel):
     type:str
     total:int
+    success:bool = True
     
 class TopItemsArtists(TopItemsBase):
     artists : list[artist_schema.Artist]
     pass
+
+class TopItemsTracks(TopItemsBase):
+    pass
+    
     
     
     
