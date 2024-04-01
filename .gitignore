@@ -162,3 +162,5 @@ cython_debug/
 
 #own files
 top.json
+*.json
+uploads/
