@@ -1,7 +1,8 @@
 import schemas.artist as artist_schema
 import schemas.user as user_schema
 import auth
-import requests, json
+import requests, json, os
+
 
 def get_my_top_items(type:str="artists", token:str = auth.token):
     url = f'https://api.spotify.com/v1/me/top/{type}'
@@ -16,9 +17,8 @@ def get_my_top_items(type:str="artists", token:str = auth.token):
                        for item in res_items]
     
         return user_schema.TopItemsArtists(type="artist", total=res_json["total"], artists=all_artists).dict()
-      
-    
-        
-        
-    return res.json()
+   
+            
+    return {"success":False}
+
   
