@@ -30,6 +30,7 @@ pip install -r requirements.txt
 
 To be able to use spotify api, you must create a devloper account, which is free of charge.
 Navigate to [spotify devloper](https://developer.spotify.com/dashboard). Once logged in and agree to terms and services, you must create an app. You can give it any name you want. However, make sure that your redirect url is the same as the one you intend to use.
+![create spotify account](images/create_app.png)
 
 Once that is done, navigate to the settings of your app and simply copy and paste the client_id and client_secret to your environemnt variable.
 
